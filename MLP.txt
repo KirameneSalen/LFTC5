@@ -1,0 +1,42 @@
+program -> int main ( ) { lista_instructiuni return CONST ; }
+program -> int main ( ) { return CONST ; }
+lista_instructiuni -> instructiune
+lista_instructiuni -> instructiune lista_instructiuni
+instructiune -> declarare
+instructiune -> atribuire
+instructiune -> cond
+instructiune -> ciclic
+instructiune -> intrare
+instructiune -> iesire
+declarare -> tip lista_id ;
+lista_id -> ID
+lista_id -> ID , lista_id
+lista_id -> atr
+lista_id -> atr, lista_id
+tip -> int
+tip -> double
+atribuire -> atr ;
+atr -> ID = expresie
+intrare -> cin >> ID ;
+iesire -> cout << expresie ;
+cond -> if ( conditie ) { lista_instructiuni }
+cond -> if ( conditie ) { lista_instructiuni } else { lista_instructiuni }
+conditie -> expresie
+conditie -> conditie operator expresie
+operator -> <
+operator -> <=
+operator -> >
+operator -> >=
+operator -> ==
+operator -> !=
+operator -> &&
+operator -> ||
+ciclic -> while ( conditie ) { lista_instructiuni }
+expresie -> op
+expresie -> op + expresie
+expresie -> op - expresie
+expresie -> op / expresie
+expresie -> op * expresie
+expresie -> op % expresie
+op -> ID
+op -> CONST
